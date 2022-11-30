@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    font-size: 1.5vw;
+    padding: 0;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+
+}
+#whatsapp_icon img{
+    width: 48px;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+}
+a#llamar{
+    margin: 5% 0;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 3px;
+	color: #000;
+	background: orangered;
+	font-size: 2vw;
+	box-shadow:
+		0 1px 2px rgba(0,0,0,0.07), 
+		0 2px 4px rgba(0,0,0,0.07), 
+		0 4px 8px rgba(0,0,0,0.07), 
+		0 8px 16px rgba(0,0,0,0.07),
+		0 16px 32px rgba(0,0,0,0.07), 
+		0 32px 64px rgba(0,0,0,0.07);
+
+
+}
+a#llamar:hover{
+    background: radial-gradient(circle 110px at var(--x) var(--y), rgba(169, 242, 136, .4), rgba(169, 242, 136, 0));
+}
+
+#inicio{
+    background-image: url('http://www.lthlaw.com/wp-content/uploads/2018/05/car-accidents-banner-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#inicio #cover{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+}
+header{
+    display: grid;
+    place-items: center;
+    font-size: 1.5vw;
+}
+#menu {
+    padding-left:20px;
+    padding-top:5px;   
+    height:25px;
+    width: max-content;
+}
+#menu ul{
+    list-style:none; /* Eliminamos los bullets */
+    margin:0px; /* Quitamos los margenes */
+    padding:0px; /* Quitamos el padding */
+
+}
+#menu ul li {
+    float:left; /* Hacemos que el menu se muestre horizontal */
+    padding-left:10px;
+    padding-right:10px;
+    border-right:1px solid #FFFFFF;
+}
+#menu ul li a{
+    text-decoration:none;
+    color:#FFF;
+    font-weight:bold;
+}
+#menu ul li a:hover{
+    color:#CCC;
+}
+
+#cover h1{
+    margin: 5% 0 2% 0;
+    font-size: 4vw;
+}
+#cover h2{
+    margin: 2% 0 5% 0;
+    font-size: 2vw;
+}
+#cover span{
+    font-size: 1.5vw;
+}
+
+
+#services{
+    color: #FFF;
+    text-align: center;
+    padding: 0 2%;
+}
+#services h2{
+    color: rgb(0, 255, 0);
+    margin: 5% 0;
+    font-size: 3vw;
+}
+.service{
+    display: flex;
+    align-items: flex-start;
+    margin: 5% 0;
+}
+.service img{
+    width: 50%;
+}
+.service .service-desc{
+    margin: auto 0;
+}
+
+.service .service-desc span{
+    color: rgb(0, 255, 0);
+    font-size: 2vw;
+    font-style: bold;
+    margin: 2% 0;
+}
+
+#comunicate{
+    background-image: url('https://www.homecenter.com.co/static/landing/guiasdecompra/Guias_de_compra_2/img/accesorios-y-maletero-para-moto/arrancador-de-bateria.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #FFF;
+
+    text-align: center;
+    padding: 2%;
+}
+#comunicate .cover{
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+}
+#comunicate h2{
+    font-size: 4vw;
+    margin: 2%;
+}
+#comunicate span{
+    font-size: 1vw;
+    color: rgb(0, 255, 0);
+    display: block;
+    margin: 5% 0;
+}
+#comunicate a{
+    margin: 2% 0;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 3px;
+	color: #fff;
+	background: rgb(0, 255, 0);
+	font-size: 2vw;
+	box-shadow:
+		0 1px 2px rgba(0,0,0,0.07), 
+		0 2px 4px rgba(0,0,0,0.07), 
+		0 4px 8px rgba(0,0,0,0.07), 
+		0 8px 16px rgba(0,0,0,0.07),
+		0 16px 32px rgba(0,0,0,0.07), 
+		0 32px 64px rgba(0,0,0,0.07);
+
+
+}
+
+#comunicate a:hover{
+    background: radial-gradient(circle 110px at var(--x) var(--y), rgba(169, 242, 136, .4), rgba(169, 242, 136, 0));
+}
+
+footer{
+    background-color: #FFF;
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+    color: rgba(31, 31, 31, 0.679);
+    font-size: 1vw;
+    margin: 5% 0 0 0;
+
+}
+
+@media (max-width: 921px) {
+    #menu{
+        display: none;
+    }
+    #cover h1{
+        margin: -5% 0 2% 0;
+        font-size: 8vw;
+    }
+    #cover h2{
+        margin: 2% 0 5% 0;
+        font-size: 4vw;
+    }
+    #cover span{
+        font-size: 3vw;
+    }
+
+    #services h2{
+        color: rgb(0, 255, 0);
+        margin: 5% 0;
+        font-size: 8vw;
+    }
+
+    .service{
+        display: inline-block;
+        margin: 5% 0;
+    }
+    .service img{
+        width: 100%;
+    }
+
+
+    .service .service-desc span{
+        font-size: 4vw;
+        margin: 2% 0;
+    }
+    
+    .service .service-desc p{
+        font-size: 3vw;
+    }
+
+    #comunicate h2{
+        font-size: 8vw;
+    }
+    #comunicate span{
+        font-size: 3vw;
+    }
+
+    #comunicate p{
+        font-size: 2.5vw;
+    }
+
+    #comunicate a{
+        font-size: 3vw;
+    
+    }
+
+    footer{
+        font-size: 2.5vw;
+    }
+
+    #whatsapp_icon img{
+        width: 64px;
+        left: 90%;
+    }
+  }
